@@ -1,10 +1,11 @@
 import "./App.css";
-import Table from "./Table.js";
+import Diena from "./Diena.js";
 export default function App() {
   return (
     <>
+    <div>Hiiiiiiiiiiiiiii :3</div>
       <p>hii!</p>
-      <Table></Table>
+      <Diena></Diena>
     </>
   );
 }
