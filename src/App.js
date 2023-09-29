@@ -1,15 +1,27 @@
 import "./App.css";
 import Diena from "./Diena.js";
-import Stunda from "./Stunda.js";
 const d = new Date();
 function weekDay() {
-  return (d.toLocaleDateString('lv', { weekday: 'long' }))
-};
+  return d.toLocaleDateString("lv", { weekday: "long" });
+}
 
 function monthLongName() {
-  return (d.toLocaleDateString('lv', { month: 'long' }))
-};
+  return d.toLocaleDateString("lv", { month: "long" });
+}
 
+const pirmdienasStundas = [
+  "Sociālās zinības",
+  "Dabaszinības",
+  "Vēsture",
+  "Krievu valoda",
+];
+
+const otrdienasStundas = [
+  "2Sociālās zinības",
+  "2Dabaszinības",
+  "2Vēsture",
+  "2Krievu valoda",
+];
 
 export default function App() {
   return (
@@ -19,8 +31,19 @@ export default function App() {
           day={weekDay()}
           year={d.getFullYear()}
           monthDay={d.getDate()}
-          month={monthLongName()}></Diena>
-        <Stunda></Stunda>
+          month={monthLongName()}
+          stundas={pirmdienasStundas}
+        />
+        <br />
+        <br />
+        <br />
+        <Diena
+          day={weekDay()}
+          year={d.getFullYear()}
+          monthDay={d.getDate()}
+          month={monthLongName()}
+          stundas={otrdienasStundas}
+        />
       </div>
     </>
   );
