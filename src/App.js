@@ -27,23 +27,11 @@ export default function App() {
   return (
     <>
       <div>
-        <Diena
-          day={weekDay()}
-          year={d.getFullYear()}
-          monthDay={d.getDate()}
-          month={monthLongName()}
-          stundas={pirmdienasStundas}
-        />
+        <Diena stundas={pirmdienasStundas} />
         <br />
         <br />
         <br />
-        <Diena
-          day={weekDay()}
-          year={d.getFullYear()}
-          monthDay={d.getDate()}
-          month={monthLongName()}
-          stundas={otrdienasStundas}
-        />
+        <Diena stundas={otrdienasStundas} />
       </div>
     </>
   );
