@@ -23,6 +23,10 @@ const otrdienasStundas = [
   "2Krievu valoda",
 ];
 
+const visasStundas = {
+  Pirmdiena: ["Sociālās zinības", "Dabaszinības", "Vēsture", "Krievu valoda"],
+};
+
 export default function App() {
   return (
     <>
