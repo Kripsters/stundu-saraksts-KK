@@ -1,20 +1,6 @@
 import "./App.css";
 import Diena from "./Diena.js";
 
-const pirmdienasStundas = [
-  "Sociālās zinības",
-  "Dabaszinības",
-  "Vēsture",
-  "Krievu valoda",
-];
-
-const otrdienasStundas = [
-  "2Sociālās zinības",
-  "2Dabaszinības",
-  "2Vēsture",
-  "2Krievu valoda",
-];
-
 const visasStundas = [
   {
     diena: "Pirmdiena",
